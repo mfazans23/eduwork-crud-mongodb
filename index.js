@@ -5,6 +5,7 @@ const productRouterV1 = require('./app/product_v1/routes')
 const productRouterV2 = require('./app/product_v2/routes')
 
 require('./config/mongoose')
+require('dotenv').config()
 
 const app = express()
 
