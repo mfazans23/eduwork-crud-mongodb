@@ -3,8 +3,7 @@ const { MongoClient } = require('mongodb')
 require('dotenv').config()
 
 // Connection URI
-const uri =
-  'mongodb+srv://mfazans23:mfazans23@cluster0.vex5oxc.mongodb.net/eduwork-native?retryWrites=true&w=majority'
+const uri = process.env.MONGO_URI
 
 // Create a new MongoClient
 const client = new MongoClient(uri)
