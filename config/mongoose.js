@@ -2,8 +2,7 @@ const mongoose = require('mongoose')
 
 require('dotenv').config()
 
-const connection =
-  'mongodb+srv://mfazans23:mfazans23@cluster0.vex5oxc.mongodb.net/eduwork-native?retryWrites=true&w=majority'
+const connection = process.env.MONGO_URI
 
 mongoose.set('strictQuery', false)
 
